@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14112" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Wl2-yi-LHx">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--HOME-->
+        <scene sceneID="hF6-3o-kaw">
+            <objects>
+                <viewController id="73C-qF-nSe" customClass="HomeViewController" customModule="LYCNews" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="SMz-g4-UrT">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ofd-NP-xTl" customClass="DZMSegmentedControl" customModule="LYCNews" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="64" width="375" height="44"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="R2j-Gr-Wcw"/>
+                                </constraints>
+                            </view>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" directionalLockEnabled="YES" pagingEnabled="YES" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="NPO-CK-3aT" customClass="HomeCollectionView" customModule="LYCNews" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="108" width="375" height="559"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="0e3-jV-z8f">
+                                    <size key="itemSize" width="374" height="558"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="homeCollectionViewCellReuseId" id="325-Xd-seq" customClass="HomeCollectionViewCell" customModule="LYCNews" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.5" width="374" height="558"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
+                                            <rect key="frame" x="0.0" y="0.0" width="374" height="558"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="anU-lb-9Dr">
+                                                    <rect key="frame" x="8" y="8" width="358" height="542"/>
+                                                    <subviews>
+                                                        <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="1" sectionFooterHeight="1" translatesAutoresizingMaskIntoConstraints="NO" id="Dt2-yJ-oG5" customClass="HomeTableView" customModule="LYCNews" customModuleProvider="target">
+                                                            <rect key="frame" x="0.0" y="0.0" width="358" height="542"/>
+                                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            <prototypes>
+                                                                <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="homeTableViewCellReuseId" rowHeight="78" id="ncP-ey-eJk" customClass="HomeTableViewCell" customModule="LYCNews" customModuleProvider="target">
+                                                                    <rect key="frame" x="0.0" y="1" width="358" height="78"/>
+                                                                    <autoresizingMask key="autoresizingMask"/>
+                                                                    <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="ncP-ey-eJk" id="ptd-AX-hb9">
+                                                                        <rect key="frame" x="0.0" y="0.0" width="358" height="77.5"/>
+                                                                        <autoresizingMask key="autoresizingMask"/>
+                                                                    </tableViewCellContentView>
+                                                                </tableViewCell>
+                                                            </prototypes>
+                                                        </tableView>
+                                                    </subviews>
+                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <constraints>
+                                                        <constraint firstItem="Dt2-yJ-oG5" firstAttribute="leading" secondItem="anU-lb-9Dr" secondAttribute="leading" id="2eF-ug-CoB"/>
+                                                        <constraint firstAttribute="bottom" secondItem="Dt2-yJ-oG5" secondAttribute="bottom" id="HG4-ah-LGu"/>
+                                                        <constraint firstItem="Dt2-yJ-oG5" firstAttribute="top" secondItem="anU-lb-9Dr" secondAttribute="top" id="d43-AU-qHE"/>
+                                                        <constraint firstAttribute="trailing" secondItem="Dt2-yJ-oG5" secondAttribute="trailing" id="dH8-OM-qlN"/>
+                                                    </constraints>
+                                                </view>
+                                            </subviews>
+                                        </view>
+                                        <constraints>
+                                            <constraint firstItem="anU-lb-9Dr" firstAttribute="top" secondItem="325-Xd-seq" secondAttribute="topMargin" id="Fx4-tR-Gje"/>
+                                            <constraint firstAttribute="bottomMargin" secondItem="anU-lb-9Dr" secondAttribute="bottom" id="UVw-xK-TyH"/>
+                                            <constraint firstItem="anU-lb-9Dr" firstAttribute="leading" secondItem="325-Xd-seq" secondAttribute="leadingMargin" id="whS-ZB-7Xn"/>
+                                            <constraint firstAttribute="trailingMargin" secondItem="anU-lb-9Dr" secondAttribute="trailing" id="xm6-Q9-abG"/>
+                                        </constraints>
+                                        <connections>
+                                            <outlet property="mHomeTableView" destination="Dt2-yJ-oG5" id="hL1-CR-RJa"/>
+                                        </connections>
+                                    </collectionViewCell>
+                                </cells>
+                            </collectionView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="ofd-NP-xTl" firstAttribute="leading" secondItem="HDD-Pg-Rab" secondAttribute="leading" id="0Ax-pO-gDU"/>
+                            <constraint firstItem="NPO-CK-3aT" firstAttribute="leading" secondItem="HDD-Pg-Rab" secondAttribute="leading" id="FzH-yp-nID"/>
+                            <constraint firstItem="ofd-NP-xTl" firstAttribute="trailing" secondItem="HDD-Pg-Rab" secondAttribute="trailing" id="OmY-p7-5il"/>
+                            <constraint firstItem="ofd-NP-xTl" firstAttribute="top" secondItem="HDD-Pg-Rab" secondAttribute="top" id="UAe-Py-KzU"/>
+                            <constraint firstItem="NPO-CK-3aT" firstAttribute="top" secondItem="ofd-NP-xTl" secondAttribute="bottom" id="r3k-hd-Seu"/>
+                            <constraint firstItem="HDD-Pg-Rab" firstAttribute="trailing" secondItem="NPO-CK-3aT" secondAttribute="trailing" id="tBp-En-3EK"/>
+                            <constraint firstItem="HDD-Pg-Rab" firstAttribute="bottom" secondItem="NPO-CK-3aT" secondAttribute="bottom" id="twX-Ff-rjT"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="HDD-Pg-Rab"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="HOME" id="pZs-eJ-hZe"/>
+                    <connections>
+                        <outlet property="homeCollectionVIew" destination="NPO-CK-3aT" id="cIF-he-ldD"/>
+                        <outlet property="segmentedControl" destination="ofd-NP-xTl" id="ak6-ge-0Tm"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cQX-DX-pSg" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="213.59999999999999" y="-322.48875562218893"/>
+        </scene>
+        <!--Home Navigation Controller-->
+        <scene sceneID="cXX-5D-UNh">
+            <objects>
+                <navigationController id="Wl2-yi-LHx" customClass="HomeNavigationController" customModule="LYCNews" customModuleProvider="target" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="i5t-4W-c9U">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="73C-qF-nSe" kind="relationship" relationship="rootViewController" id="tb8-85-v4K"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="k31-X1-252" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-690" y="-321"/>
+        </scene>
+    </scenes>
+</document>

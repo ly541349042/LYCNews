@@ -20,16 +20,6 @@ DEPENDENCIES:
   - SDWebImage (~> 3.8)
   - YYKit
 
-SPEC REPOS:
-  https://github.com/cocoapods/specs.git:
-    - Alamofire
-    - HandyJSON
-    - Masonry
-    - MBProgressHUD
-    - MJRefresh
-    - SDWebImage
-    - YYKit
-
 SPEC CHECKSUMS:
   Alamofire: e4fa87002c137ba2d8d634d2c51fabcda0d5c223
   HandyJSON: 3a3de917c4118767ffe41c29b5acba23409649f4
@@ -41,4 +31,4 @@ SPEC CHECKSUMS:
 
 PODFILE CHECKSUM: 29556b3594f3b0872a1c0fab125147ea50630b50
 
-COCOAPODS: 1.5.3
+COCOAPODS: 1.4.0
