@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2743C05FE3B3C18903ACC92B /* Pods_LYCNewsTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5962F08DD0107D816CDAF010 /* Pods_LYCNewsTests.framework */; };
+		83F492CF18E95C60BC0CBB91 /* Pods_LYCNews.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9EB1E03C008D8CAE62DF8083 /* Pods_LYCNews.framework */; };
 		BA8107BC20CA13FF004B26D9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA8107BB20CA13FF004B26D9 /* AppDelegate.swift */; };
 		BA8107BE20CA13FF004B26D9 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA8107BD20CA13FF004B26D9 /* FirstViewController.swift */; };
 		BA8107C020CA13FF004B26D9 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA8107BF20CA13FF004B26D9 /* SecondViewController.swift */; };
@@ -24,6 +26,8 @@
 		BA81080220CA15F7004B26D9 /* LYLocalDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA81080120CA15F7004B26D9 /* LYLocalDataManager.swift */; };
 		BA81080420CA1624004B26D9 /* LYBaseRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA81080320CA1624004B26D9 /* LYBaseRequest.swift */; };
 		BA81080620CA162F004B26D9 /* LYBaseResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA81080520CA162F004B26D9 /* LYBaseResponse.swift */; };
+		BA81080820CA1C82004B26D9 /* LYConnectionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA81080720CA1C82004B26D9 /* LYConnectionManager.swift */; };
+		D9282270AD6C2BBF833AF410 /* Pods_LYCNewsUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC84F850ACA142B1866E82B3 /* Pods_LYCNewsUITests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +48,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		15878378D32B017AF92906BD /* Pods-LYCNews.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LYCNews.release.xcconfig"; path = "Pods/Target Support Files/Pods-LYCNews/Pods-LYCNews.release.xcconfig"; sourceTree = "<group>"; };
+		5962F08DD0107D816CDAF010 /* Pods_LYCNewsTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LYCNewsTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5C391C6ECE703667A9A569A1 /* Pods-LYCNewsTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LYCNewsTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-LYCNewsTests/Pods-LYCNewsTests.release.xcconfig"; sourceTree = "<group>"; };
+		7FA6B232BFB34EB243E3533E /* Pods-LYCNewsUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LYCNewsUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LYCNewsUITests/Pods-LYCNewsUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		9EB1E03C008D8CAE62DF8083 /* Pods_LYCNews.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LYCNews.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B7E8C1A5B97658F566FE023F /* Pods-LYCNewsUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LYCNewsUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-LYCNewsUITests/Pods-LYCNewsUITests.release.xcconfig"; sourceTree = "<group>"; };
 		BA8107B820CA13FF004B26D9 /* LYCNews.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LYCNews.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BA8107BB20CA13FF004B26D9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BA8107BD20CA13FF004B26D9 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
@@ -67,6 +77,10 @@
 		BA81080120CA15F7004B26D9 /* LYLocalDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LYLocalDataManager.swift; sourceTree = "<group>"; };
 		BA81080320CA1624004B26D9 /* LYBaseRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LYBaseRequest.swift; sourceTree = "<group>"; };
 		BA81080520CA162F004B26D9 /* LYBaseResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LYBaseResponse.swift; sourceTree = "<group>"; };
+		BA81080720CA1C82004B26D9 /* LYConnectionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LYConnectionManager.swift; sourceTree = "<group>"; };
+		BC84F850ACA142B1866E82B3 /* Pods_LYCNewsUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LYCNewsUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C45BD1E8BAA020A510D0CA81 /* Pods-LYCNewsTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LYCNewsTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LYCNewsTests/Pods-LYCNewsTests.debug.xcconfig"; sourceTree = "<group>"; };
+		D9B8EFE0FC89EDE20F38FF62 /* Pods-LYCNews.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LYCNews.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LYCNews/Pods-LYCNews.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +88,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				83F492CF18E95C60BC0CBB91 /* Pods_LYCNews.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,6 +96,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2743C05FE3B3C18903ACC92B /* Pods_LYCNewsTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -88,12 +104,36 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D9282270AD6C2BBF833AF410 /* Pods_LYCNewsUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		69B218ED2BCEE8A52407E9B9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9EB1E03C008D8CAE62DF8083 /* Pods_LYCNews.framework */,
+				5962F08DD0107D816CDAF010 /* Pods_LYCNewsTests.framework */,
+				BC84F850ACA142B1866E82B3 /* Pods_LYCNewsUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		8B96DE6362B2CF843CE69AEE /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D9B8EFE0FC89EDE20F38FF62 /* Pods-LYCNews.debug.xcconfig */,
+				15878378D32B017AF92906BD /* Pods-LYCNews.release.xcconfig */,
+				C45BD1E8BAA020A510D0CA81 /* Pods-LYCNewsTests.debug.xcconfig */,
+				5C391C6ECE703667A9A569A1 /* Pods-LYCNewsTests.release.xcconfig */,
+				7FA6B232BFB34EB243E3533E /* Pods-LYCNewsUITests.debug.xcconfig */,
+				B7E8C1A5B97658F566FE023F /* Pods-LYCNewsUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		BA8107AF20CA13FF004B26D9 = {
 			isa = PBXGroup;
 			children = (
@@ -101,6 +141,8 @@
 				BA8107D120CA1402004B26D9 /* LYCNewsTests */,
 				BA8107DC20CA1402004B26D9 /* LYCNewsUITests */,
 				BA8107B920CA13FF004B26D9 /* Products */,
+				8B96DE6362B2CF843CE69AEE /* Pods */,
+				69B218ED2BCEE8A52407E9B9 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -180,6 +222,7 @@
 			isa = PBXGroup;
 			children = (
 				BA81080120CA15F7004B26D9 /* LYLocalDataManager.swift */,
+				BA81080720CA1C82004B26D9 /* LYConnectionManager.swift */,
 			);
 			path = Managers;
 			sourceTree = "<group>";
@@ -242,9 +285,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = BA8107E220CA1402004B26D9 /* Build configuration list for PBXNativeTarget "LYCNews" */;
 			buildPhases = (
+				55274B6A5C914618E84B0ED6 /* [CP] Check Pods Manifest.lock */,
 				BA8107B420CA13FF004B26D9 /* Sources */,
 				BA8107B520CA13FF004B26D9 /* Frameworks */,
 				BA8107B620CA13FF004B26D9 /* Resources */,
+				F04A1213E65130F7D012E35E /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -259,6 +304,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = BA8107E520CA1402004B26D9 /* Build configuration list for PBXNativeTarget "LYCNewsTests" */;
 			buildPhases = (
+				83455AB70F2964919AEA78EA /* [CP] Check Pods Manifest.lock */,
 				BA8107CA20CA1402004B26D9 /* Sources */,
 				BA8107CB20CA1402004B26D9 /* Frameworks */,
 				BA8107CC20CA1402004B26D9 /* Resources */,
@@ -277,6 +323,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = BA8107E820CA1402004B26D9 /* Build configuration list for PBXNativeTarget "LYCNewsUITests" */;
 			buildPhases = (
+				9662873478138D5EBBAB67B2 /* [CP] Check Pods Manifest.lock */,
 				BA8107D520CA1402004B26D9 /* Sources */,
 				BA8107D620CA1402004B26D9 /* Frameworks */,
 				BA8107D720CA1402004B26D9 /* Resources */,
@@ -361,12 +408,100 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		55274B6A5C914618E84B0ED6 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-LYCNews-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		83455AB70F2964919AEA78EA /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-LYCNewsTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9662873478138D5EBBAB67B2 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-LYCNewsUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F04A1213E65130F7D012E35E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-LYCNews/Pods-LYCNews-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/HandyJSON/HandyJSON.framework",
+				"${BUILT_PRODUCTS_DIR}/MBProgressHUD/MBProgressHUD.framework",
+				"${BUILT_PRODUCTS_DIR}/MJRefresh/MJRefresh.framework",
+				"${BUILT_PRODUCTS_DIR}/Masonry/Masonry.framework",
+				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
+				"${BUILT_PRODUCTS_DIR}/YYKit/YYKit.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/HandyJSON.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MBProgressHUD.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MJRefresh.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Masonry.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/YYKit.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LYCNews/Pods-LYCNews-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		BA8107B420CA13FF004B26D9 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				BA8107F820CA1577004B26D9 /* LYBaseViewController.swift in Sources */,
+				BA81080820CA1C82004B26D9 /* LYConnectionManager.swift in Sources */,
 				BA8107C020CA13FF004B26D9 /* SecondViewController.swift in Sources */,
 				BA81080620CA162F004B26D9 /* LYBaseResponse.swift in Sources */,
 				BA8107F120CA153B004B26D9 /* LYDefines.swift in Sources */,
@@ -548,6 +683,7 @@
 		};
 		BA8107E320CA1402004B26D9 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D9B8EFE0FC89EDE20F38FF62 /* Pods-LYCNews.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -567,6 +703,7 @@
 		};
 		BA8107E420CA1402004B26D9 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 15878378D32B017AF92906BD /* Pods-LYCNews.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -586,6 +723,7 @@
 		};
 		BA8107E620CA1402004B26D9 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C45BD1E8BAA020A510D0CA81 /* Pods-LYCNewsTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -607,6 +745,7 @@
 		};
 		BA8107E720CA1402004B26D9 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5C391C6ECE703667A9A569A1 /* Pods-LYCNewsTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -628,6 +767,7 @@
 		};
 		BA8107E920CA1402004B26D9 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7FA6B232BFB34EB243E3533E /* Pods-LYCNewsUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -648,6 +788,7 @@
 		};
 		BA8107EA20CA1402004B26D9 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B7E8C1A5B97658F566FE023F /* Pods-LYCNewsUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
