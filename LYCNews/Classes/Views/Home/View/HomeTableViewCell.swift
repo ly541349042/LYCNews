@@ -11,16 +11,25 @@ import SDWebImage
 
 public let kHomeTableViewCellReuseId = "homeTableViewCellReuseId"
 class HomeTableViewCell: UITableViewCell {
-    
+
+
+    @IBOutlet weak var mTitleLabel: UILabel!
+
+
+    @IBOutlet weak var mAuthorLabel: UILabel!
+    @IBOutlet weak var mDateLabel: UILabel!
+
+    @IBOutlet weak var mThumbImageView: UIImageView!
+
     var mModel: HomeNewsModel = HomeNewsModel()
     
     func setupWithModel(_ model: HomeNewsModel) {
-        
-        self.textLabel?.text = model.title
-        self.detailTextLabel?.text = model.date
-        self.imageView?.sd_setImage(with: URL(string: model.thumbnail_pic_s)!)
-        
         self.mModel = model
+
+        self.mTitleLabel.text = model.title
+        self.mAuthorLabel.text = model.author_name
+        self.mDateLabel.text = model.date
+        self.mThumbImageView.sd_setImage(with: URL(string: model.thumbnail_pic_s)!)
     }
 
     override func awakeFromNib() {

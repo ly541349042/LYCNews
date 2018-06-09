@@ -10,7 +10,6 @@ import UIKit
 
 protocol LYTableViewDelegate: NSObjectProtocol {
     func tableView(_ tableView: UITableView, didClick index: IndexPath)
-    
 }
 
 class LYBaseTableView: UITableView {

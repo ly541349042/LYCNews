@@ -71,10 +71,13 @@ class HomeTableView: LYBaseTableView {
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let model = self.mNewsModels[indexPath.row]
-        if let vc = UIApplication.shared.keyWindow?.rootViewController {
+        if let vc = self.firstAvailableViewController() {
             let sf = SFSafariViewController(url: URL(string: model.url)!)
             vc.present(sf, animated: true, completion: nil)
         }
-        
+    }
+
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 110
     }
 }
