@@ -50,6 +50,15 @@
 		BAB8E5BF20CF841900A95008 /* EventModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAB8E5BE20CF841900A95008 /* EventModel.swift */; };
 		BAB8E5C120CF8C1000A95008 /* EventTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAB8E5C020CF8C1000A95008 /* EventTableViewCell.swift */; };
 		BAB8E5C320CF9D4600A95008 /* EventDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAB8E5C220CF9D4600A95008 /* EventDetailViewController.swift */; };
+		BAB8E5C520D0B23D00A95008 /* EventDetailImageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAB8E5C420D0B23D00A95008 /* EventDetailImageCell.swift */; };
+		BAB8E5C720D0B25100A95008 /* EventDetailTitleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAB8E5C620D0B25100A95008 /* EventDetailTitleCell.swift */; };
+		BAB8E5C920D0B26700A95008 /* EventDetailActionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAB8E5C820D0B26700A95008 /* EventDetailActionCell.swift */; };
+		BAB8E5CB20D0B27F00A95008 /* EventDetailLocationCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAB8E5CA20D0B27F00A95008 /* EventDetailLocationCell.swift */; };
+		BAB8E5CD20D0B29300A95008 /* EventDetailTimeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAB8E5CC20D0B29300A95008 /* EventDetailTimeCell.swift */; };
+		BAB8E5CF20D0B2B700A95008 /* EventDetailFeeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAB8E5CE20D0B2B700A95008 /* EventDetailFeeCell.swift */; };
+		BAB8E5D120D0B2D800A95008 /* EventDetailInfoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAB8E5D020D0B2D800A95008 /* EventDetailInfoCell.swift */; };
+		BAB8E5D320D0B2E500A95008 /* EventDetailDetailCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAB8E5D220D0B2E500A95008 /* EventDetailDetailCell.swift */; };
+		BAB8E5D520D0B8EA00A95008 /* EventDetailTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAB8E5D420D0B8E900A95008 /* EventDetailTableView.swift */; };
 		D9282270AD6C2BBF833AF410 /* Pods_LYCNewsUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC84F850ACA142B1866E82B3 /* Pods_LYCNewsUITests.framework */; };
 /* End PBXBuildFile section */
 
@@ -124,6 +133,15 @@
 		BAB8E5BE20CF841900A95008 /* EventModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventModel.swift; sourceTree = "<group>"; };
 		BAB8E5C020CF8C1000A95008 /* EventTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventTableViewCell.swift; sourceTree = "<group>"; };
 		BAB8E5C220CF9D4600A95008 /* EventDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventDetailViewController.swift; sourceTree = "<group>"; };
+		BAB8E5C420D0B23D00A95008 /* EventDetailImageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventDetailImageCell.swift; sourceTree = "<group>"; };
+		BAB8E5C620D0B25100A95008 /* EventDetailTitleCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventDetailTitleCell.swift; sourceTree = "<group>"; };
+		BAB8E5C820D0B26700A95008 /* EventDetailActionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventDetailActionCell.swift; sourceTree = "<group>"; };
+		BAB8E5CA20D0B27F00A95008 /* EventDetailLocationCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventDetailLocationCell.swift; sourceTree = "<group>"; };
+		BAB8E5CC20D0B29300A95008 /* EventDetailTimeCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventDetailTimeCell.swift; sourceTree = "<group>"; };
+		BAB8E5CE20D0B2B700A95008 /* EventDetailFeeCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventDetailFeeCell.swift; sourceTree = "<group>"; };
+		BAB8E5D020D0B2D800A95008 /* EventDetailInfoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventDetailInfoCell.swift; sourceTree = "<group>"; };
+		BAB8E5D220D0B2E500A95008 /* EventDetailDetailCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventDetailDetailCell.swift; sourceTree = "<group>"; };
+		BAB8E5D420D0B8E900A95008 /* EventDetailTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventDetailTableView.swift; sourceTree = "<group>"; };
 		BC84F850ACA142B1866E82B3 /* Pods_LYCNewsUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LYCNewsUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C45BD1E8BAA020A510D0CA81 /* Pods-LYCNewsTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LYCNewsTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LYCNewsTests/Pods-LYCNewsTests.debug.xcconfig"; sourceTree = "<group>"; };
 		D9B8EFE0FC89EDE20F38FF62 /* Pods-LYCNews.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LYCNews.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LYCNews/Pods-LYCNews.debug.xcconfig"; sourceTree = "<group>"; };
@@ -447,6 +465,15 @@
 			children = (
 				BAB8E5BB20CF83D300A95008 /* EventTableView.swift */,
 				BAB8E5C020CF8C1000A95008 /* EventTableViewCell.swift */,
+				BAB8E5D420D0B8E900A95008 /* EventDetailTableView.swift */,
+				BAB8E5C420D0B23D00A95008 /* EventDetailImageCell.swift */,
+				BAB8E5C620D0B25100A95008 /* EventDetailTitleCell.swift */,
+				BAB8E5C820D0B26700A95008 /* EventDetailActionCell.swift */,
+				BAB8E5CC20D0B29300A95008 /* EventDetailTimeCell.swift */,
+				BAB8E5CA20D0B27F00A95008 /* EventDetailLocationCell.swift */,
+				BAB8E5CE20D0B2B700A95008 /* EventDetailFeeCell.swift */,
+				BAB8E5D020D0B2D800A95008 /* EventDetailInfoCell.swift */,
+				BAB8E5D220D0B2E500A95008 /* EventDetailDetailCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -692,11 +719,17 @@
 				52656DC420CA24B700A3B840 /* LYBaseNavigationController.swift in Sources */,
 				BA81080620CA162F004B26D9 /* LYBaseResponse.swift in Sources */,
 				52656DEE20CA6A6600A3B840 /* LYRequest.swift in Sources */,
+				BAB8E5CF20D0B2B700A95008 /* EventDetailFeeCell.swift in Sources */,
 				52656DF420CA791300A3B840 /* HomeTableViewCell.swift in Sources */,
+				BAB8E5D320D0B2E500A95008 /* EventDetailDetailCell.swift in Sources */,
+				BAB8E5CB20D0B27F00A95008 /* EventDetailLocationCell.swift in Sources */,
 				BAB8E5C320CF9D4600A95008 /* EventDetailViewController.swift in Sources */,
 				BA8107F120CA153B004B26D9 /* LYDefines.swift in Sources */,
+				BAB8E5D120D0B2D800A95008 /* EventDetailInfoCell.swift in Sources */,
 				52656DCC20CA27EF00A3B840 /* EventNavigationViewController.swift in Sources */,
 				BA8107FA20CA1591004B26D9 /* LYBaseTableView.swift in Sources */,
+				BAB8E5C920D0B26700A95008 /* EventDetailActionCell.swift in Sources */,
+				BAB8E5C720D0B25100A95008 /* EventDetailTitleCell.swift in Sources */,
 				52656DE920CA564F00A3B840 /* LYBaseViewModel.swift in Sources */,
 				52656DF820CA8DD000A3B840 /* CategoryPlaceHolder.swift in Sources */,
 				BAB8E5BC20CF83D300A95008 /* EventTableView.swift in Sources */,
@@ -707,12 +740,15 @@
 				BA8107FC20CA15BE004B26D9 /* HomeViewController.swift in Sources */,
 				52656DEC20CA5A5A00A3B840 /* HomeNewsModel.swift in Sources */,
 				BA81080220CA15F7004B26D9 /* LYLocalDataManager.swift in Sources */,
+				BAB8E5CD20D0B29300A95008 /* EventDetailTimeCell.swift in Sources */,
 				52656DFE20CA8DF000A3B840 /* HelperPlaceHolder.swift in Sources */,
+				BAB8E5D520D0B8EA00A95008 /* EventDetailTableView.swift in Sources */,
 				BAB8E5B920CBA43100A95008 /* LYViewExtension.swift in Sources */,
 				BAB8E5C120CF8C1000A95008 /* EventTableViewCell.swift in Sources */,
 				52656DDD20CA505600A3B840 /* HomeViewModel.swift in Sources */,
 				52656DD420CA461900A3B840 /* LYBaseCollectionView.swift in Sources */,
 				52656DD020CA284A00A3B840 /* ProfileNavigationController.swift in Sources */,
+				BAB8E5C520D0B23D00A95008 /* EventDetailImageCell.swift in Sources */,
 				52656DF220CA78FA00A3B840 /* HomeTableView.swift in Sources */,
 				BAB8E5BF20CF841900A95008 /* EventModel.swift in Sources */,
 				52656DD720CA469600A3B840 /* DZMSegmentedControl.swift in Sources */,

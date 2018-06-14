@@ -37,6 +37,5 @@ extension EventViewController: LYTableViewDelegate {
     func tableView(_ tableView: UITableView, didClick index: IndexPath) {
         let model = self.mEventTableView.mEvents[index.row]
         self.performSegue(withIdentifier: "showEventDetailSegue", sender: model)
-
     }
 }

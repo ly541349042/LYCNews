@@ -10,12 +10,17 @@ import UIKit
 
 class EventDetailViewController: LYBaseViewController {
 
+    @IBOutlet weak var mTableView: EventDetailTableView!
+
     var mModel: EventModel = EventModel()
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        self.title = self.mModel.title
+        self.mTableView.lyTableViewDelegate = self
+        self.mTableView.configWithModel(self.mModel)
     }
 
     override func didReceiveMemoryWarning() {
@@ -34,4 +39,10 @@ class EventDetailViewController: LYBaseViewController {
     }
     */
 
+}
+
+extension EventDetailViewController: LYTableViewDelegate {
+    func tableView(_ tableView: UITableView, didClick index: IndexPath) {
+        <#code#>
+    }
 }

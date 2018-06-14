@@ -41,7 +41,8 @@ public let kHomeTableViewHeight: CGFloat = kHomeCollectionViewHeight - 2
 
 public let kSegmentControlHeight: CGFloat = 44
 
-
+//  default view
+public let kRootVC = UIApplication.shared.keyWindow?.rootViewController
 
 class LYDefines: NSObject {
 

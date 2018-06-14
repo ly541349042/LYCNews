@@ -46,11 +46,13 @@ class HomeTableView: LYBaseTableView {
     }
     
     @objc func headerRefresh() {
-        LYRequest.requestChannel(self.mChannel) { (models) in
-            self.mNewsModels = models
-            self.reloadData()
-            self.mj_header.endRefreshing()
-        }
+        self.mj_header.endRefreshing()
+        //  don't test too much times for the api.
+//        LYRequest.requestChannel(self.mChannel) { (models) in
+//            self.mNewsModels = models
+//            self.reloadData()
+//            self.mj_header.endRefreshing()
+//        }
     }
     
     @objc func footerRefresh() {
