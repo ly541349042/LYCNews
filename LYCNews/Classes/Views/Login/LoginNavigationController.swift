@@ -1,26 +1,19 @@
 //
-//  EventDetailViewController.swift
+//  LoginNavigationController.swift
 //  LYCNews
 //
-//  Created by LiYan on 2018/6/12.
+//  Created by LiYan on 2018/6/14.
 //  Copyright © 2018年 iStack. All rights reserved.
 //
 
 import UIKit
 
-class EventDetailViewController: LYBaseViewController {
-
-    @IBOutlet weak var mTableView: EventDetailTableView!
-
-    var mModel: EventModel = EventModel()
+class LoginNavigationController: LYBaseNavigationController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
-        self.title = self.mModel.title
-        self.mTableView.lyTableViewDelegate = self
-        self.mTableView.configWithModel(self.mModel)
     }
 
     override func didReceiveMemoryWarning() {
@@ -39,10 +32,4 @@ class EventDetailViewController: LYBaseViewController {
     }
     */
 
-}
-
-extension EventDetailViewController: LYTableViewDelegate {
-    func tableView(_ tableView: UITableView, didClick index: IndexPath) {
-        //   detail url clicked
-    }
 }

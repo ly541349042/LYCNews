@@ -22,6 +22,14 @@ class HomeNewsModel: HandyJSON {
     var thumbnail_pic_s03: String = ""
 
     required init() {}
+
+    //  real api
+//    var id: Int = 0
+//    var title: String = ""
+//    var date: String = ""   // 2001-12-31 12:00:00
+//    var category: String = ""
+//    var newsUrl: String = ""
+//    var coverUrl: String = ""
 }
 
 class HomeNewsDataModel: HandyJSON {
@@ -29,6 +37,9 @@ class HomeNewsDataModel: HandyJSON {
     var data: [HomeNewsModel] = []
     
     required init() {}
+
+    //  real api
+//    var news: [HomeNewsModel] = []
 }
 
 //class HomeNewsCompositionModel: HandyJSON {

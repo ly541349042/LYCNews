@@ -59,6 +59,9 @@
 		BAB8E5D120D0B2D800A95008 /* EventDetailInfoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAB8E5D020D0B2D800A95008 /* EventDetailInfoCell.swift */; };
 		BAB8E5D320D0B2E500A95008 /* EventDetailDetailCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAB8E5D220D0B2E500A95008 /* EventDetailDetailCell.swift */; };
 		BAB8E5D520D0B8EA00A95008 /* EventDetailTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAB8E5D420D0B8E900A95008 /* EventDetailTableView.swift */; };
+		BAEE8EDC20D20CEC00FFCF55 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAEE8EDB20D20CEC00FFCF55 /* LoginViewController.swift */; };
+		BAEE8EDE20D20D0700FFCF55 /* LoginStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BAEE8EDD20D20D0700FFCF55 /* LoginStoryboard.storyboard */; };
+		BAEE8EE020D20D9B00FFCF55 /* LoginNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAEE8EDF20D20D9A00FFCF55 /* LoginNavigationController.swift */; };
 		D9282270AD6C2BBF833AF410 /* Pods_LYCNewsUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC84F850ACA142B1866E82B3 /* Pods_LYCNewsUITests.framework */; };
 /* End PBXBuildFile section */
 
@@ -142,6 +145,9 @@
 		BAB8E5D020D0B2D800A95008 /* EventDetailInfoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventDetailInfoCell.swift; sourceTree = "<group>"; };
 		BAB8E5D220D0B2E500A95008 /* EventDetailDetailCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventDetailDetailCell.swift; sourceTree = "<group>"; };
 		BAB8E5D420D0B8E900A95008 /* EventDetailTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventDetailTableView.swift; sourceTree = "<group>"; };
+		BAEE8EDB20D20CEC00FFCF55 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		BAEE8EDD20D20D0700FFCF55 /* LoginStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LoginStoryboard.storyboard; sourceTree = "<group>"; };
+		BAEE8EDF20D20D9A00FFCF55 /* LoginNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginNavigationController.swift; sourceTree = "<group>"; };
 		BC84F850ACA142B1866E82B3 /* Pods_LYCNewsUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LYCNewsUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C45BD1E8BAA020A510D0CA81 /* Pods-LYCNewsTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LYCNewsTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LYCNewsTests/Pods-LYCNewsTests.debug.xcconfig"; sourceTree = "<group>"; };
 		D9B8EFE0FC89EDE20F38FF62 /* Pods-LYCNews.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LYCNews.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LYCNews/Pods-LYCNews.debug.xcconfig"; sourceTree = "<group>"; };
@@ -389,6 +395,7 @@
 		BA8107ED20CA14F7004B26D9 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				BAEE8EDA20D20CC700FFCF55 /* Login */,
 				BA8107F620CA155F004B26D9 /* Profile */,
 				BA8107F520CA155A004B26D9 /* Event */,
 				BA8107F420CA1554004B26D9 /* Home */,
@@ -484,6 +491,16 @@
 				BAB8E5BE20CF841900A95008 /* EventModel.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		BAEE8EDA20D20CC700FFCF55 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				BAEE8EDB20D20CEC00FFCF55 /* LoginViewController.swift */,
+				BAEE8EDF20D20D9A00FFCF55 /* LoginNavigationController.swift */,
+				BAEE8EDD20D20D0700FFCF55 /* LoginStoryboard.storyboard */,
+			);
+			path = Login;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -598,6 +615,7 @@
 				52656DCE20CA27F900A3B840 /* EventStoryboard.storyboard in Resources */,
 				BA8107C520CA1402004B26D9 /* Assets.xcassets in Resources */,
 				52656DD220CA285800A3B840 /* ProfileStoryboard.storyboard in Resources */,
+				BAEE8EDE20D20D0700FFCF55 /* LoginStoryboard.storyboard in Resources */,
 				52656DC820CA267C00A3B840 /* HomeStoryboard.storyboard in Resources */,
 				BA8107C320CA13FF004B26D9 /* Main.storyboard in Resources */,
 			);
@@ -718,6 +736,7 @@
 				BA81080820CA1C82004B26D9 /* LYConnectionManager.swift in Sources */,
 				52656DC420CA24B700A3B840 /* LYBaseNavigationController.swift in Sources */,
 				BA81080620CA162F004B26D9 /* LYBaseResponse.swift in Sources */,
+				BAEE8EE020D20D9B00FFCF55 /* LoginNavigationController.swift in Sources */,
 				52656DEE20CA6A6600A3B840 /* LYRequest.swift in Sources */,
 				BAB8E5CF20D0B2B700A95008 /* EventDetailFeeCell.swift in Sources */,
 				52656DF420CA791300A3B840 /* HomeTableViewCell.swift in Sources */,
@@ -745,6 +764,7 @@
 				BAB8E5D520D0B8EA00A95008 /* EventDetailTableView.swift in Sources */,
 				BAB8E5B920CBA43100A95008 /* LYViewExtension.swift in Sources */,
 				BAB8E5C120CF8C1000A95008 /* EventTableViewCell.swift in Sources */,
+				BAEE8EDC20D20CEC00FFCF55 /* LoginViewController.swift in Sources */,
 				52656DDD20CA505600A3B840 /* HomeViewModel.swift in Sources */,
 				52656DD420CA461900A3B840 /* LYBaseCollectionView.swift in Sources */,
 				52656DD020CA284A00A3B840 /* ProfileNavigationController.swift in Sources */,
