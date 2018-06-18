@@ -34,7 +34,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="X0M-pH-X42"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="homepage" id="yLZ-yp-lYI"/>
+                    <tabBarItem key="tabBarItem" title="homepage" image="baseNews" id="yLZ-yp-lYI"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yER-SJ-wyo" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -91,7 +91,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="O23-QG-70F"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="me" id="GnG-Zt-Bn0"/>
+                    <tabBarItem key="tabBarItem" title="me" image="baseProfile" id="GnG-Zt-Bn0"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="inA-8o-zVu" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -129,7 +129,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="GB4-pK-CQs"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="event" id="jMC-Wg-mMe"/>
+                    <tabBarItem key="tabBarItem" title="event" image="baseEvent" id="jMC-Wg-mMe"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Dt5-a6-R1Z" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -144,4 +144,9 @@
             <point key="canvasLocation" x="2214" y="429"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="baseEvent" width="32" height="30"/>
+        <image name="baseNews" width="32" height="32"/>
+        <image name="baseProfile" width="26" height="32"/>
+    </resources>
 </document>
