@@ -28,6 +28,10 @@ class EventDetailActionCell: UITableViewCell {
 
     @objc func joinEvent() {
 
+        if let vc = self.firstAvailableViewController() as? EventDetailViewController {
+//            vc.showLogin()
+            vc.showLogin()
+        }
     }
 
     @objc func interestedInEvent() {

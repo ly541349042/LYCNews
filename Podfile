@@ -13,6 +13,7 @@ pod 'Masonry'
 pod 'SDWebImage', '~>3.8'
 pod 'Alamofire'
 pod 'HandyJSON'
+pod 'ILLoginKit'
 
   target 'LYCNewsTests' do
     inherit! :search_paths

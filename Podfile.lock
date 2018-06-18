@@ -1,12 +1,26 @@
 PODS:
   - Alamofire (4.7.2)
+  - Bolts (1.9.0):
+    - Bolts/AppLinks (= 1.9.0)
+    - Bolts/Tasks (= 1.9.0)
+  - Bolts/AppLinks (1.9.0):
+    - Bolts/Tasks
+  - Bolts/Tasks (1.9.0)
+  - FBSDKCoreKit (4.33.0):
+    - Bolts (~> 1.7)
+  - FBSDKLoginKit (4.31.0):
+    - FBSDKCoreKit
   - HandyJSON (4.1.1)
+  - ILLoginKit (1.0.1):
+    - FBSDKLoginKit (= 4.31.0)
+    - Validator (= 3.0.2)
   - Masonry (1.1.0)
   - MBProgressHUD (1.0.0)
   - MJRefresh (3.1.15.3)
   - SDWebImage (3.8.2):
     - SDWebImage/Core (= 3.8.2)
   - SDWebImage/Core (3.8.2)
+  - Validator (3.0.2)
   - YYKit (1.0.9):
     - YYKit/no-arc (= 1.0.9)
   - YYKit/no-arc (1.0.9)
@@ -14,6 +28,7 @@ PODS:
 DEPENDENCIES:
   - Alamofire
   - HandyJSON
+  - ILLoginKit
   - Masonry
   - MBProgressHUD (~> 1.0.0)
   - MJRefresh
@@ -23,22 +38,32 @@ DEPENDENCIES:
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
     - Alamofire
+    - Bolts
+    - FBSDKCoreKit
+    - FBSDKLoginKit
     - HandyJSON
+    - ILLoginKit
     - Masonry
     - MBProgressHUD
     - MJRefresh
     - SDWebImage
+    - Validator
     - YYKit
 
 SPEC CHECKSUMS:
   Alamofire: e4fa87002c137ba2d8d634d2c51fabcda0d5c223
+  Bolts: ac6567323eac61e203f6a9763667d0f711be34c8
+  FBSDKCoreKit: 572b047a7e029bc44542bcf8a59414e7ff2b543e
+  FBSDKLoginKit: 95a252ddffd6919c0f132a02292f0824616d8709
   HandyJSON: 3a3de917c4118767ffe41c29b5acba23409649f4
+  ILLoginKit: 6f717fa907114986b6914d1502bf8bd40b3720e5
   Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
   MBProgressHUD: 4890f671c94e8a0f3cf959aa731e9de2f036d71a
   MJRefresh: b48380ae2b927b46c4ef000de9adb8dc748e1df7
   SDWebImage: 098e97e6176540799c27e804c96653ee0833d13c
+  Validator: bf211c1d71b3f910d230c09c70e62429d0fef63a
   YYKit: 7cda43304a8dc3696c449041e2cb3107b4e236e7
 
-PODFILE CHECKSUM: 29556b3594f3b0872a1c0fab125147ea50630b50
+PODFILE CHECKSUM: a4f27e231ff7ae67782ecbd3af88272b06f281af
 
 COCOAPODS: 1.5.3

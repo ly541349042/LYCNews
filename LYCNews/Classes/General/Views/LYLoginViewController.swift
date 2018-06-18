@@ -1,18 +1,22 @@
 //
-//  LoginNavigationController.swift
+//  LYLoginViewController.swift
 //  LYCNews
 //
-//  Created by LiYan on 2018/6/14.
+//  Created by LiYan on 2018/6/18.
 //  Copyright © 2018年 iStack. All rights reserved.
 //
 
 import UIKit
+import ILLoginKit
 
-class LoginNavigationController: LYBaseNavigationController {
+class LYLoginViewController: LoginViewController {
 
     override func viewDidLoad() {
+        configuration = Settings.defaultLoginConfig
         super.viewDidLoad()
 
+
+        
         // Do any additional setup after loading the view.
     }
 
