@@ -26,7 +26,6 @@
 		52656DF020CA751E00A3B840 /* HomeCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52656DEF20CA751E00A3B840 /* HomeCollectionViewCell.swift */; };
 		52656DF220CA78FA00A3B840 /* HomeTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52656DF120CA78FA00A3B840 /* HomeTableView.swift */; };
 		52656DF420CA791300A3B840 /* HomeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52656DF320CA791300A3B840 /* HomeTableViewCell.swift */; };
-		52656DF820CA8DD000A3B840 /* CategoryPlaceHolder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52656DF720CA8DD000A3B840 /* CategoryPlaceHolder.swift */; };
 		52656DFA20CA8DDC00A3B840 /* CorePlaceHolder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52656DF920CA8DDC00A3B840 /* CorePlaceHolder.swift */; };
 		52656DFC20CA8DE500A3B840 /* ModelPlaceHolder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52656DFB20CA8DE500A3B840 /* ModelPlaceHolder.swift */; };
 		52656DFE20CA8DF000A3B840 /* HelperPlaceHolder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52656DFD20CA8DF000A3B840 /* HelperPlaceHolder.swift */; };
@@ -101,7 +100,6 @@
 		52656DEF20CA751E00A3B840 /* HomeCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCollectionViewCell.swift; sourceTree = "<group>"; };
 		52656DF120CA78FA00A3B840 /* HomeTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTableView.swift; sourceTree = "<group>"; };
 		52656DF320CA791300A3B840 /* HomeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTableViewCell.swift; sourceTree = "<group>"; };
-		52656DF720CA8DD000A3B840 /* CategoryPlaceHolder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryPlaceHolder.swift; sourceTree = "<group>"; };
 		52656DF920CA8DDC00A3B840 /* CorePlaceHolder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CorePlaceHolder.swift; sourceTree = "<group>"; };
 		52656DFB20CA8DE500A3B840 /* ModelPlaceHolder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelPlaceHolder.swift; sourceTree = "<group>"; };
 		52656DFD20CA8DF000A3B840 /* HelperPlaceHolder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelperPlaceHolder.swift; sourceTree = "<group>"; };
@@ -233,7 +231,6 @@
 		52656DE020CA515E00A3B840 /* Categories */ = {
 			isa = PBXGroup;
 			children = (
-				52656DF720CA8DD000A3B840 /* CategoryPlaceHolder.swift */,
 				BAB8E5B820CBA43100A95008 /* LYViewExtension.swift */,
 			);
 			path = Categories;
@@ -759,7 +756,6 @@
 				BAB8E5C920D0B26700A95008 /* EventDetailActionCell.swift in Sources */,
 				BAB8E5C720D0B25100A95008 /* EventDetailTitleCell.swift in Sources */,
 				52656DE920CA564F00A3B840 /* LYBaseViewModel.swift in Sources */,
-				52656DF820CA8DD000A3B840 /* CategoryPlaceHolder.swift in Sources */,
 				BAB8E5BC20CF83D300A95008 /* EventTableView.swift in Sources */,
 				BA8107BC20CA13FF004B26D9 /* AppDelegate.swift in Sources */,
 				BA8107FE20CA15C8004B26D9 /* EventViewController.swift in Sources */,
