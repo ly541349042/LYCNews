@@ -6,6 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -17,14 +18,72 @@
                     <view key="view" contentMode="scaleToFill" id="Kb9-JW-6oF">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" bounces="NO" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" bouncesZoom="NO" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="1" sectionFooterHeight="1" translatesAutoresizingMaskIntoConstraints="NO" id="2Jm-US-4kR">
+                                <rect key="frame" x="0.0" y="134" width="375" height="533"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="profileCellReuseId" id="Qkb-Sg-cEz">
+                                        <rect key="frame" x="0.0" y="1" width="375" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Qkb-Sg-cEz" id="LdT-sw-L1f">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uWv-Ol-ZsW">
+                                <rect key="frame" x="8" y="64" width="359" height="67"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="cz7-Ah-hxk">
+                                        <rect key="frame" x="8" y="4" width="60" height="60"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="60" id="DVO-Ce-zmr"/>
+                                            <constraint firstAttribute="height" constant="60" id="xnx-ii-oz9"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="LogIn/SignUp" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FFe-jT-OoY">
+                                        <rect key="frame" x="87" y="23" width="264" height="30"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="FFe-jT-OoY" firstAttribute="trailing" secondItem="uWv-Ol-ZsW" secondAttribute="trailingMargin" id="8nU-f1-dOC"/>
+                                    <constraint firstItem="cz7-Ah-hxk" firstAttribute="top" secondItem="uWv-Ol-ZsW" secondAttribute="top" constant="4" id="KSB-fA-qPd"/>
+                                    <constraint firstItem="FFe-jT-OoY" firstAttribute="top" secondItem="uWv-Ol-ZsW" secondAttribute="top" constant="23" id="b93-cc-EOV"/>
+                                    <constraint firstAttribute="bottom" secondItem="FFe-jT-OoY" secondAttribute="bottom" constant="14" id="gYH-1Y-UtL"/>
+                                    <constraint firstItem="cz7-Ah-hxk" firstAttribute="leading" secondItem="uWv-Ol-ZsW" secondAttribute="leading" constant="8" id="k1T-qp-1NQ"/>
+                                    <constraint firstItem="FFe-jT-OoY" firstAttribute="leading" secondItem="cz7-Ah-hxk" secondAttribute="trailing" constant="19" id="ka5-17-X7V"/>
+                                </constraints>
+                            </view>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="2Jm-US-4kR" firstAttribute="top" secondItem="MCh-Zz-Qud" secondAttribute="top" constant="70" id="0dj-Z3-3hH"/>
+                            <constraint firstItem="2Jm-US-4kR" firstAttribute="leading" secondItem="MCh-Zz-Qud" secondAttribute="leading" id="9iF-3T-h41"/>
+                            <constraint firstItem="MCh-Zz-Qud" firstAttribute="trailing" secondItem="2Jm-US-4kR" secondAttribute="trailing" id="HE1-On-8eg"/>
+                            <constraint firstItem="2Jm-US-4kR" firstAttribute="top" secondItem="uWv-Ol-ZsW" secondAttribute="bottom" constant="3" id="Xfa-S5-hOe"/>
+                            <constraint firstItem="MCh-Zz-Qud" firstAttribute="bottom" secondItem="2Jm-US-4kR" secondAttribute="bottom" id="cq7-vV-hvm"/>
+                            <constraint firstItem="uWv-Ol-ZsW" firstAttribute="top" secondItem="MCh-Zz-Qud" secondAttribute="top" id="gVn-2c-3pe"/>
+                            <constraint firstItem="MCh-Zz-Qud" firstAttribute="trailing" secondItem="uWv-Ol-ZsW" secondAttribute="trailing" constant="8" id="pQz-vR-TYQ"/>
+                            <constraint firstItem="uWv-Ol-ZsW" firstAttribute="leading" secondItem="MCh-Zz-Qud" secondAttribute="leading" constant="8" id="qw7-2d-35C"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="MCh-Zz-Qud"/>
                     </view>
                     <navigationItem key="navigationItem" title="me" id="C0E-ra-hGN"/>
+                    <connections>
+                        <outlet property="settingTableView" destination="2Jm-US-4kR" id="idY-p3-NyA"/>
+                        <outlet property="userHeaderImageView" destination="cz7-Ah-hxk" id="dKl-Vm-SRF"/>
+                        <outlet property="userNameLabel" destination="FFe-jT-OoY" id="FHl-Rb-vGp"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jKA-8G-ATy" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-30" y="158"/>
+            <point key="canvasLocation" x="-31.199999999999999" y="157.87106446776613"/>
         </scene>
         <!--Profile Navigation Controller-->
         <scene sceneID="vip-Mt-jK6">

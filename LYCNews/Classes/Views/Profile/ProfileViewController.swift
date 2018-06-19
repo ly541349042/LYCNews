@@ -10,15 +10,53 @@ import UIKit
 
 class ProfileViewController: LYBaseViewController {
 
+    
+    @IBOutlet weak var userHeaderImageView: UIImageView!
+    
+    @IBOutlet weak var userNameLabel: UILabel!
+    
+    @IBOutlet weak var settingTableView: UITableView!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        configUserImageView()
+        configNameLabel()
+        configTableView()
+        
+        
+        userNameLabel.isUserInteractionEnabled = true
+        let ges = UITapGestureRecognizer(target: self, action: #selector(tapUserName))
+        userNameLabel.addGestureRecognizer(ges)
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    
+    func configUserImageView() {
+        userHeaderImageView.layer.cornerRadius = userHeaderImageView.frame.width / 2
+        userHeaderImageView.layer.masksToBounds = true
+    }
+    
+    func configNameLabel() {
+        if LYAuthManager.shared.isLoggedIn(),
+            let user = LYLocalDataManager.shared.currentUser {
+            userNameLabel.text = user.name
+        } else {
+            userNameLabel.isUserInteractionEnabled = true
+            let ges = UITapGestureRecognizer(target: self, action: #selector(tapUserName))
+            userNameLabel.addGestureRecognizer(ges)
+        }
+    }
+    
+    func configTableView() {
+        settingTableView.delegate = self
+        settingTableView.dataSource = self
+        settingTableView.reloadData()
+    }
+    
+    @objc func tapUserName() {
+        if !LYAuthManager.shared.isLoggedIn() {
+            showLogin()
+        }
     }
     
 
@@ -32,4 +70,32 @@ class ProfileViewController: LYBaseViewController {
     }
     */
 
+}
+
+extension ProfileViewController: UITableViewDataSource {
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "profileCellReuseId")
+        switch indexPath.row {
+        case 0:
+            cell?.textLabel!.text = "my info"
+        case 1:
+            cell?.textLabel!.text = "my event"
+        case 2:
+            cell?.textLabel!.text = "about us"
+        default:
+            cell?.textLabel?.text = "out"
+        }
+        return cell!
+    }
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return 3
+    }
+    
+    
+}
+
+extension ProfileViewController: UITableViewDelegate {
+    
 }

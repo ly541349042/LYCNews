@@ -10,7 +10,7 @@ import UIKit
 import ILLoginKit
 
 class LYBaseViewController: UIViewController {
-
+    
     lazy var loginCoordinator: LoginCoordinator = {
         return LoginCoordinator(rootViewController: self)
     }()

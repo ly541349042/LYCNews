@@ -27,8 +27,10 @@
 		52656DF220CA78FA00A3B840 /* HomeTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52656DF120CA78FA00A3B840 /* HomeTableView.swift */; };
 		52656DF420CA791300A3B840 /* HomeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52656DF320CA791300A3B840 /* HomeTableViewCell.swift */; };
 		52656DFA20CA8DDC00A3B840 /* CorePlaceHolder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52656DF920CA8DDC00A3B840 /* CorePlaceHolder.swift */; };
-		52656DFC20CA8DE500A3B840 /* ModelPlaceHolder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52656DFB20CA8DE500A3B840 /* ModelPlaceHolder.swift */; };
 		52656DFE20CA8DF000A3B840 /* HelperPlaceHolder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52656DFD20CA8DF000A3B840 /* HelperPlaceHolder.swift */; };
+		52656E0020D8A68600A3B840 /* LYAuthManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52656DFF20D8A68600A3B840 /* LYAuthManager.swift */; };
+		52656E0220D8A7C600A3B840 /* LYSecureDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52656E0120D8A7C600A3B840 /* LYSecureDataManager.swift */; };
+		52656E0420D8A9C500A3B840 /* LYUserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52656E0320D8A9C500A3B840 /* LYUserModel.swift */; };
 		BA2EC9DF20D7867300DFC55A /* LoginCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA2EC9DE20D7867300DFC55A /* LoginCoordinator.swift */; };
 		BA2EC9E120D78B6500DFC55A /* LPlaceHolder.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA2EC9E020D78B6500DFC55A /* LPlaceHolder.swift */; };
 		BA2EC9E320D78B9E00DFC55A /* LYLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA2EC9E220D78B9E00DFC55A /* LYLoginViewController.swift */; };
@@ -101,8 +103,10 @@
 		52656DF120CA78FA00A3B840 /* HomeTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTableView.swift; sourceTree = "<group>"; };
 		52656DF320CA791300A3B840 /* HomeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTableViewCell.swift; sourceTree = "<group>"; };
 		52656DF920CA8DDC00A3B840 /* CorePlaceHolder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CorePlaceHolder.swift; sourceTree = "<group>"; };
-		52656DFB20CA8DE500A3B840 /* ModelPlaceHolder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelPlaceHolder.swift; sourceTree = "<group>"; };
 		52656DFD20CA8DF000A3B840 /* HelperPlaceHolder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelperPlaceHolder.swift; sourceTree = "<group>"; };
+		52656DFF20D8A68600A3B840 /* LYAuthManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LYAuthManager.swift; sourceTree = "<group>"; };
+		52656E0120D8A7C600A3B840 /* LYSecureDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LYSecureDataManager.swift; sourceTree = "<group>"; };
+		52656E0320D8A9C500A3B840 /* LYUserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LYUserModel.swift; sourceTree = "<group>"; };
 		5962F08DD0107D816CDAF010 /* Pods_LYCNewsTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LYCNewsTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5C391C6ECE703667A9A569A1 /* Pods-LYCNewsTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LYCNewsTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-LYCNewsTests/Pods-LYCNewsTests.release.xcconfig"; sourceTree = "<group>"; };
 		7FA6B232BFB34EB243E3533E /* Pods-LYCNewsUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LYCNewsUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LYCNewsUITests/Pods-LYCNewsUITests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -247,7 +251,7 @@
 		52656DE220CA516F00A3B840 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				52656DFB20CA8DE500A3B840 /* ModelPlaceHolder.swift */,
+				52656E0320D8A9C500A3B840 /* LYUserModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -408,6 +412,8 @@
 			children = (
 				BA81080120CA15F7004B26D9 /* LYLocalDataManager.swift */,
 				BA81080720CA1C82004B26D9 /* LYConnectionManager.swift */,
+				52656DFF20D8A68600A3B840 /* LYAuthManager.swift */,
+				52656E0120D8A7C600A3B840 /* LYSecureDataManager.swift */,
 			);
 			path = Managers;
 			sourceTree = "<group>";
@@ -737,7 +743,6 @@
 			files = (
 				52656DF020CA751E00A3B840 /* HomeCollectionViewCell.swift in Sources */,
 				BA8107F820CA1577004B26D9 /* LYBaseViewController.swift in Sources */,
-				52656DFC20CA8DE500A3B840 /* ModelPlaceHolder.swift in Sources */,
 				52656DFA20CA8DDC00A3B840 /* CorePlaceHolder.swift in Sources */,
 				BA81080820CA1C82004B26D9 /* LYConnectionManager.swift in Sources */,
 				52656DC420CA24B700A3B840 /* LYBaseNavigationController.swift in Sources */,
@@ -746,6 +751,7 @@
 				BAB8E5CF20D0B2B700A95008 /* EventDetailFeeCell.swift in Sources */,
 				BA2EC9E120D78B6500DFC55A /* LPlaceHolder.swift in Sources */,
 				52656DF420CA791300A3B840 /* HomeTableViewCell.swift in Sources */,
+				52656E0220D8A7C600A3B840 /* LYSecureDataManager.swift in Sources */,
 				BAB8E5D320D0B2E500A95008 /* EventDetailDetailCell.swift in Sources */,
 				BAB8E5CB20D0B27F00A95008 /* EventDetailLocationCell.swift in Sources */,
 				BAB8E5C320CF9D4600A95008 /* EventDetailViewController.swift in Sources */,
@@ -761,6 +767,8 @@
 				BA8107FE20CA15C8004B26D9 /* EventViewController.swift in Sources */,
 				52656DCA20CA26A300A3B840 /* HomeNavigationController.swift in Sources */,
 				BA81080020CA15D5004B26D9 /* ProfileViewController.swift in Sources */,
+				52656E0420D8A9C500A3B840 /* LYUserModel.swift in Sources */,
+				52656E0020D8A68600A3B840 /* LYAuthManager.swift in Sources */,
 				BA8107FC20CA15BE004B26D9 /* HomeViewController.swift in Sources */,
 				52656DEC20CA5A5A00A3B840 /* HomeNewsModel.swift in Sources */,
 				BA81080220CA15F7004B26D9 /* LYLocalDataManager.swift in Sources */,

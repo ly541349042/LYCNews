@@ -10,4 +10,12 @@ import UIKit
 
 class LYLocalDataManager: NSObject {
 
+    //  todo: this is not nil after request login api.
+    var currentUser: LYUserModel?
+
+    static let shared = LYLocalDataManager()
+    
+    override init() {
+        super.init()
+    }
 }
