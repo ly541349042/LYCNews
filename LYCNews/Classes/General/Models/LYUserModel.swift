@@ -17,6 +17,7 @@ class LYUserModel: HandyJSON {
     var gender = 0  // 1:male, 2: female, 0: unknown
     var age = 0
     var password = ""
+    var headerImage = ""
     
     required init() {}
 }

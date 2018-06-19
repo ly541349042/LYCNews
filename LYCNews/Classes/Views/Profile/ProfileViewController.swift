@@ -34,6 +34,8 @@ class ProfileViewController: LYBaseViewController {
     func configUserImageView() {
         userHeaderImageView.layer.cornerRadius = userHeaderImageView.frame.width / 2
         userHeaderImageView.layer.masksToBounds = true
+        
+        userHeaderImageView.image =  UIImage(named: "profileUserDefault")
     }
     
     func configNameLabel() {
