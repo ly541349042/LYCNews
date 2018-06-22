@@ -18,7 +18,7 @@ enum MethodType {
 class LYConnectionManager: NSObject {
     
     //  static manager
-    static let shared = LYConnectionManager(URL_juhe_basic)
+    static let shared = LYConnectionManager(URL_enjob_basic_api)
     let mBaseUrl: String
     private init(_ baseUrl: String) {
         self.mBaseUrl = baseUrl

@@ -47,6 +47,11 @@ class HomeTableView: LYBaseTableView {
     
     @objc func headerRefresh() {
         self.mj_header.endRefreshing()
+        LYRequest.requestNewsList { (models) in
+            self.mNewsModels = models
+            self.reloadData()
+            self.mj_header.endRefreshing()
+        }
         //  don't test too much times for the api.
 //        LYRequest.requestChannel(self.mChannel) { (models) in
 //            self.mNewsModels = models
@@ -74,7 +79,7 @@ class HomeTableView: LYBaseTableView {
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let model = self.mNewsModels[indexPath.row]
         if let vc = self.firstAvailableViewController() {
-            let sf = SFSafariViewController(url: URL(string: model.url)!)
+            let sf = SFSafariViewController(url: URL(string: model.newsUrl)!)
             vc.present(sf, animated: true, completion: nil)
         }
     }

@@ -27,9 +27,9 @@ class HomeViewModel: NSObject, HomeViewModelDelegate {
     weak var delegate: HomeViewModelDelegate?
     
     func requestData() {
-        LYRequest.requestChannel("test") { (models) in
-            self.delegate?.reloadViews()
-        }
+//        LYRequest.requestChannel("test") { (models) in
+//            self.delegate?.reloadViews()
+//        }
 //        delegate?.reloadViews()
     }
     

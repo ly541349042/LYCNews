@@ -27,9 +27,9 @@ class HomeTableViewCell: UITableViewCell {
         self.mModel = model
 
         self.mTitleLabel.text = model.title
-        self.mAuthorLabel.text = model.author_name
+        self.mAuthorLabel.text = model.category
         self.mDateLabel.text = model.date
-        self.mThumbImageView.sd_setImage(with: URL(string: model.thumbnail_pic_s)!)
+        self.mThumbImageView.sd_setImage(with: URL(string: model.coverUrl)!)
     }
 
     override func awakeFromNib() {
