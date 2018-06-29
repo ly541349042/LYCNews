@@ -51,5 +51,7 @@ class LYConnectionManager: NSObject {
         }
     }
     
-    
+//    private func requestWithHeader() {
+//        Alamofire.request(mBaseUrl, method: HTTPMethod.post, parameters: nil, encoding: ParameterEncoding(), headers: <#T##HTTPHeaders?#>)
+//    }
 }

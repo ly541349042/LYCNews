@@ -9,11 +9,15 @@
 import UIKit
 import ILLoginKit
 
+import FirebaseUI
+
 class LYBaseViewController: UIViewController {
     
     lazy var loginCoordinator: LoginCoordinator = {
         return LoginCoordinator(rootViewController: self)
     }()
+
+    let authUI = FUIAuth.defaultAuthUI()
 
 //    lazy var loginViewController: LYLoginViewController = {
 //        let controller = LYLoginViewController()
@@ -32,7 +36,18 @@ class LYBaseViewController: UIViewController {
     }
 
     func showLogin() {
-        loginCoordinator.start(animated: true)
+        authUI?.delegate = self
+        let providers: [FUIAuthProvider] = [
+            FUIGoogleAuth(),
+//            FUIFacebookAuth(),
+//            FUITwitterAuth(),
+//            FUIPhoneAuth(authUI:FUIAuth.defaultAuthUI()),
+            ]
+        authUI?.providers = providers
+        let authVC = authUI?.authViewController()
+        self.present(authVC!, animated: true, completion: nil)
+        //  maybe used
+//        loginCoordinator.start(animated: true)
         //  maybe used in future.
         //        self.present(loginViewController, animated: true, completion: nil)
     }
@@ -56,4 +71,18 @@ class LYBaseViewController: UIViewController {
 //
 //}
 
+extension LYBaseViewController: FUIAuthDelegate {
+    func authUI(_ authUI: FUIAuth, didSignInWith user: User?, error: Error?) {
+        // handle user and error as necessary
+        if let e = error {
+            print("error! \(e.localizedDescription)")
+            return
+        }
+
+        print("login!")
+
+    }
+
+
+}
 

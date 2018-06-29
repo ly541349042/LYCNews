@@ -15,6 +15,11 @@ pod 'Alamofire'
 pod 'HandyJSON'
 pod 'ILLoginKit'
 
+pod 'FirebaseUI/Auth'
+pod 'FirebaseUI/Google'
+pod 'FirebaseUI/Facebook'
+pod 'FirebaseUI/Twitter'
+
   target 'LYCNewsTests' do
     inherit! :search_paths
     # Pods for testing
