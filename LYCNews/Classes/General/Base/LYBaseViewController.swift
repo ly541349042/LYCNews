@@ -10,6 +10,8 @@ import UIKit
 import ILLoginKit
 
 import FirebaseUI
+import Firebase
+import FirebaseAuth
 
 class LYBaseViewController: UIViewController {
     
@@ -35,13 +37,18 @@ class LYBaseViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
+    func isLoggedIn() -> Bool {
+        if let _ = Auth.auth().currentUser {
+            return true
+        } else {
+            return false
+        }
+    }
+
     func showLogin() {
         authUI?.delegate = self
         let providers: [FUIAuthProvider] = [
             FUIGoogleAuth(),
-//            FUIFacebookAuth(),
-//            FUITwitterAuth(),
-//            FUIPhoneAuth(authUI:FUIAuth.defaultAuthUI()),
             ]
         authUI?.providers = providers
         let authVC = authUI?.authViewController()

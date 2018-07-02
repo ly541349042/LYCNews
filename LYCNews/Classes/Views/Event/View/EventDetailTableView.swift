@@ -14,6 +14,7 @@ class EventDetailTableView: LYBaseTableView {
 
     func configWithModel(_ model: EventModel) {
         self.mModel = model
+
         self.reloadData()
     }
 
@@ -26,7 +27,7 @@ class EventDetailTableView: LYBaseTableView {
         case 0:
             if let cell = tableView.dequeueReusableCell(withIdentifier: kEventDetailImageCellReuseId) as? EventDetailImageCell {
 //                cell.imageUrl = self.mModel.eventImage
-                cell.mImageView.sd_setImage(with: URL(string: self.mModel.eventImage)!)
+                cell.mImageView.sd_setImage(with: URL(string: self.mModel.coverUrl)!)
                 return cell
             }
         case 1:
@@ -41,7 +42,7 @@ class EventDetailTableView: LYBaseTableView {
             }
         case 3:
             if let cell = tableView.dequeueReusableCell(withIdentifier: kEventDetailTimeCellReuseId) as? EventDetailTimeCell {
-                cell.detailTextLabel?.text = self.mModel.fromDate
+                cell.detailTextLabel?.text = "\(self.mModel.beginTime)~\(self.mModel.endTime)"
                 return cell
             }
         case 4:
@@ -51,22 +52,42 @@ class EventDetailTableView: LYBaseTableView {
             }
         case 5:
             if let cell = tableView.dequeueReusableCell(withIdentifier: kEventDetailFeeCellReuseId) as? EventDetailFeeCell {
-                cell.detailTextLabel?.text = "free to join"
+                cell.detailTextLabel?.text = self.mModel.hasTicket
                 return cell
             }
         case 6:
             if let cell = tableView.dequeueReusableCell(withIdentifier: kEventDetailInfoCellReuseId) as? EventDetailInfoCell {
-                cell.detailTextLabel?.text = self.mModel.url
+                cell.detailTextLabel?.text = "www.baidu.com"
                 return cell
             }
         case 7:
             if let cell = tableView.dequeueReusableCell(withIdentifier: kEventDetailDetailCellReuseId) as? EventDetailDetailCell {
-                cell.detailLabel.text = self.mModel.desc
+//                cell.htmlContent = self.mModel.content
+                cell.setupWithContent(self.mModel.content)
                 return cell
             }
         default:
             return UITableViewCell()
         }
         return UITableViewCell()
+    }
+
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        switch indexPath.row {
+        case 0:
+            return 300
+        case 1:
+            return 55
+        case 2:
+            return 60
+        case 3,4,5:
+            return 44
+        case 6:
+            return 65
+        case 7:
+            return 400
+        default:
+            return 1
+        }
     }
 }

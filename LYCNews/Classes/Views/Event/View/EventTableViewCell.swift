@@ -22,9 +22,9 @@ class EventTableViewCell: UITableViewCell {
     func setupWithModel(_ model: EventModel) {
 
         self.mModel = model
-        self.eventImageView.sd_setImage(with: URL(string: model.eventImage))
+        self.eventImageView.sd_setImage(with: URL(string: model.coverUrl))
         self.eventTitleLabel.text = model.title
-        self.eventDescLabel.text = model.desc
+        self.eventDescLabel.text = model.category
         self.eventLocationLabel.text = model.address
     }
 

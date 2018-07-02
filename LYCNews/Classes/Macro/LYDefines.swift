@@ -26,6 +26,7 @@ public let USER_juhe_key = "39ca5658b2572c35166b4bc1692ffd95"
 public let URL_enjob_basic_api = "https://enjob.online/api"
 
 public let URL_news_list = "/news/list"
+public let URL_events_list = "/activity/list"
 
 //  MARK: - variables
 

@@ -50,6 +50,8 @@
 		BA81080620CA162F004B26D9 /* LYBaseResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA81080520CA162F004B26D9 /* LYBaseResponse.swift */; };
 		BA81080820CA1C82004B26D9 /* LYConnectionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA81080720CA1C82004B26D9 /* LYConnectionManager.swift */; };
 		BAAF936B20E60B82007C8CB7 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = BAAF936A20E60B81007C8CB7 /* GoogleService-Info.plist */; };
+		BAAF936D20E61E55007C8CB7 /* EventDetailWebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAAF936C20E61E55007C8CB7 /* EventDetailWebViewController.swift */; };
+		BAAF936F20E628B1007C8CB7 /* eventDetail.html in Resources */ = {isa = PBXBuildFile; fileRef = BAAF936E20E628B1007C8CB7 /* eventDetail.html */; };
 		BAB8E5B920CBA43100A95008 /* LYViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAB8E5B820CBA43100A95008 /* LYViewExtension.swift */; };
 		BAB8E5BC20CF83D300A95008 /* EventTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAB8E5BB20CF83D300A95008 /* EventTableView.swift */; };
 		BAB8E5BF20CF841900A95008 /* EventModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAB8E5BE20CF841900A95008 /* EventModel.swift */; };
@@ -139,6 +141,8 @@
 		BA81080720CA1C82004B26D9 /* LYConnectionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LYConnectionManager.swift; sourceTree = "<group>"; };
 		BAAF936920E6066B007C8CB7 /* LYCNews.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = LYCNews.entitlements; sourceTree = "<group>"; };
 		BAAF936A20E60B81007C8CB7 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		BAAF936C20E61E55007C8CB7 /* EventDetailWebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventDetailWebViewController.swift; sourceTree = "<group>"; };
+		BAAF936E20E628B1007C8CB7 /* eventDetail.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = eventDetail.html; sourceTree = "<group>"; };
 		BAB8E5B820CBA43100A95008 /* LYViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LYViewExtension.swift; sourceTree = "<group>"; };
 		BAB8E5BB20CF83D300A95008 /* EventTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventTableView.swift; sourceTree = "<group>"; };
 		BAB8E5BE20CF841900A95008 /* EventModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventModel.swift; sourceTree = "<group>"; };
@@ -293,6 +297,7 @@
 				BA8107C620CA1402004B26D9 /* LaunchScreen.storyboard */,
 				BA8107C920CA1402004B26D9 /* Info.plist */,
 				BAAF936A20E60B81007C8CB7 /* GoogleService-Info.plist */,
+				BAAF936E20E628B1007C8CB7 /* eventDetail.html */,
 			);
 			path = Resource;
 			sourceTree = "<group>";
@@ -460,6 +465,7 @@
 				BAB8E5BD20CF840900A95008 /* Model */,
 				BAB8E5BA20CF82ED00A95008 /* View */,
 				BA8107FD20CA15C8004B26D9 /* EventViewController.swift */,
+				BAAF936C20E61E55007C8CB7 /* EventDetailWebViewController.swift */,
 				BAB8E5C220CF9D4600A95008 /* EventDetailViewController.swift */,
 				52656DCB20CA27EF00A3B840 /* EventNavigationViewController.swift */,
 				52656DCD20CA27F900A3B840 /* EventStoryboard.storyboard */,
@@ -625,6 +631,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BAAF936F20E628B1007C8CB7 /* eventDetail.html in Resources */,
 				BA8107C820CA1402004B26D9 /* LaunchScreen.storyboard in Resources */,
 				52656DCE20CA27F900A3B840 /* EventStoryboard.storyboard in Resources */,
 				BA8107C520CA1402004B26D9 /* Assets.xcassets in Resources */,
@@ -833,6 +840,7 @@
 				52656DD420CA461900A3B840 /* LYBaseCollectionView.swift in Sources */,
 				52656DD020CA284A00A3B840 /* ProfileNavigationController.swift in Sources */,
 				BAB8E5C520D0B23D00A95008 /* EventDetailImageCell.swift in Sources */,
+				BAAF936D20E61E55007C8CB7 /* EventDetailWebViewController.swift in Sources */,
 				BA2EC9E320D78B9E00DFC55A /* LYLoginViewController.swift in Sources */,
 				52656DF220CA78FA00A3B840 /* HomeTableView.swift in Sources */,
 				BAB8E5BF20CF841900A95008 /* EventModel.swift in Sources */,

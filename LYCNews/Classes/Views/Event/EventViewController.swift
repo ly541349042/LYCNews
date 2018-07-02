@@ -30,12 +30,21 @@ class EventViewController: LYBaseViewController {
             let vc = segue.destination as? EventDetailViewController {
             vc.mModel = sender as! EventModel
         }
+
+        if segue.identifier == "presentDetailWebSegue",
+            let vc = segue.destination as? EventDetailWebViewController,
+            let model = sender as? EventModel {
+
+//            let htmlString = "<html><head><meta name=\"viewport\" content=\"initial-scale=1.0, minimum-scale=0.1, maximum-scale=2.0, user-scalable=yes\">  </head><body>\(model.content)</body></html>"
+            vc.htmlContent = model.content
+        }
     }
 }
 
 extension EventViewController: LYTableViewDelegate {
     func tableView(_ tableView: UITableView, didClick index: IndexPath) {
         let model = self.mEventTableView.mEvents[index.row]
-        self.performSegue(withIdentifier: "showEventDetailSegue", sender: model)
+        self.performSegue(withIdentifier: "presentDetailWebSegue", sender: model)
+//        self.performSegue(withIdentifier: "showEventDetailSegue", sender: model)
     }
 }

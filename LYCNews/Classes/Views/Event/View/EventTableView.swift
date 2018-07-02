@@ -29,7 +29,7 @@ class EventTableView: LYBaseTableView {
     }
 
     @objc func headerRefresh() {
-        LYRequest.fakeRequestEvent { (models) in
+        LYRequest.requestEventsList { (models) in
             self.mEvents = models
             self.reloadData()
             self.mj_header.endRefreshing()

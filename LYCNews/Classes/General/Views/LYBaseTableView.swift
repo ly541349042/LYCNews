@@ -28,6 +28,11 @@ class LYBaseTableView: UITableView {
         self.delegate = self
         self.dataSource = self
     }
+
+    deinit {
+        self.delegate = nil
+        self.dataSource = nil
+    }
 }
 
 extension LYBaseTableView: UITableViewDataSource {

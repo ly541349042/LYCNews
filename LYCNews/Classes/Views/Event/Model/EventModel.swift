@@ -10,21 +10,23 @@ import UIKit
 import HandyJSON
 
 class EventModel: HandyJSON {
-    var eventId: Int = 0
+    var id: Int = 0
     var title: String = ""
-    var desc: String = ""
-    var fromDate: String = ""
-    var toDate: String = ""
+    var createDate: String = "" //  "yyyy-MM-dd HH:mm:ss"
+    var category: String = ""
+    var coverUrl: String = ""
+    var content: String = ""
+    var participantCount: Int = 0
+    var hasTicket: String = ""
+    var beginTime: String = ""
+    var endTime: String = ""
     var address: String = ""
-    var url: String = ""
-    var eventImage: String = ""
 
     required init() {}
 }
 
 class EventDataModel: HandyJSON {
-    var stat: Int = 0
-    var data: [EventModel] = []
+    var activities: [EventModel] = []
 
     required init() {}
 }
