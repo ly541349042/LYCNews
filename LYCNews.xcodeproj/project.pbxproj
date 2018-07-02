@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		2743C05FE3B3C18903ACC92B /* Pods_LYCNewsTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5962F08DD0107D816CDAF010 /* Pods_LYCNewsTests.framework */; };
 		30314EAA076476CFFE3858AA /* Pods_LYCNews.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9EB1E03C008D8CAE62DF8083 /* Pods_LYCNews.framework */; };
+		520DBA8520E9D7C8004FA6AD /* CustomLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 520DBA8420E9D7C8004FA6AD /* CustomLoginViewController.swift */; };
+		520DBA8720E9D9E9004FA6AD /* CustomLoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 520DBA8620E9D9E9004FA6AD /* CustomLoginViewController.xib */; };
 		52656DC420CA24B700A3B840 /* LYBaseNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52656DC320CA24B700A3B840 /* LYBaseNavigationController.swift */; };
 		52656DC820CA267C00A3B840 /* HomeStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 52656DC720CA267C00A3B840 /* HomeStoryboard.storyboard */; };
 		52656DCA20CA26A300A3B840 /* HomeNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52656DC920CA26A300A3B840 /* HomeNavigationController.swift */; };
@@ -88,6 +90,8 @@
 
 /* Begin PBXFileReference section */
 		15878378D32B017AF92906BD /* Pods-LYCNews.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LYCNews.release.xcconfig"; path = "Pods/Target Support Files/Pods-LYCNews/Pods-LYCNews.release.xcconfig"; sourceTree = "<group>"; };
+		520DBA8420E9D7C8004FA6AD /* CustomLoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomLoginViewController.swift; sourceTree = "<group>"; };
+		520DBA8620E9D9E9004FA6AD /* CustomLoginViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomLoginViewController.xib; sourceTree = "<group>"; };
 		52656DC320CA24B700A3B840 /* LYBaseNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LYBaseNavigationController.swift; sourceTree = "<group>"; };
 		52656DC720CA267C00A3B840 /* HomeStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = HomeStoryboard.storyboard; sourceTree = "<group>"; };
 		52656DC920CA26A300A3B840 /* HomeNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeNavigationController.swift; sourceTree = "<group>"; };
@@ -513,6 +517,8 @@
 			isa = PBXGroup;
 			children = (
 				BA2EC9E020D78B6500DFC55A /* LPlaceHolder.swift */,
+				520DBA8420E9D7C8004FA6AD /* CustomLoginViewController.swift */,
+				520DBA8620E9D9E9004FA6AD /* CustomLoginViewController.xib */,
 			);
 			path = Login;
 			sourceTree = "<group>";
@@ -637,6 +643,7 @@
 				BA8107C520CA1402004B26D9 /* Assets.xcassets in Resources */,
 				52656DD220CA285800A3B840 /* ProfileStoryboard.storyboard in Resources */,
 				52656DC820CA267C00A3B840 /* HomeStoryboard.storyboard in Resources */,
+				520DBA8720E9D9E9004FA6AD /* CustomLoginViewController.xib in Resources */,
 				BA8107C320CA13FF004B26D9 /* Main.storyboard in Resources */,
 				BAAF936B20E60B82007C8CB7 /* GoogleService-Info.plist in Resources */,
 			);
@@ -845,6 +852,7 @@
 				52656DF220CA78FA00A3B840 /* HomeTableView.swift in Sources */,
 				BAB8E5BF20CF841900A95008 /* EventModel.swift in Sources */,
 				BA2EC9DF20D7867300DFC55A /* LoginCoordinator.swift in Sources */,
+				520DBA8520E9D7C8004FA6AD /* CustomLoginViewController.swift in Sources */,
 				52656DD720CA469600A3B840 /* DZMSegmentedControl.swift in Sources */,
 				52656DDA20CA479900A3B840 /* HomeCollectionView.swift in Sources */,
 			);

@@ -90,6 +90,11 @@ extension LYBaseViewController: FUIAuthDelegate {
 
     }
 
+    func authPickerViewController(forAuthUI authUI: FUIAuth) -> FUIAuthPickerViewController {
+        return CustomLoginViewController(nibName: "CustomLoginViewController",
+                                         bundle: Bundle.main,
+                                         authUI: authUI)
+    }
 
 }
 
